@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            组件列表
+        </title>
+    </head>
+    <body>
+
+        <table border="1px" cellspacing="0">
+            <tr>
+                <th>基地</th>
+                <th>BD</th>
+                <th>SA</th>
+                <th>服务经理</th>
+                <th>省份</th>
+                <th>城市</th>
+                <th>公司</th>
+                <th>下单类型</th>
+                <th>人天</th>
+                <th>开始时间</th>
+                <th>结束时间</th>
+                <th>状态</th>
+                <th>金额</th>
+                <th>备注</th>
+                <th>操作</th>
+            </tr>
+        {{range .}}    
+            <tr>
+                <td width="200px" align="center">{{.Base}}</td>
+                <td width="200px" align="center">{{.Bd}}</td>
+                <td width="200px" align="center">{{.Sa}}</td>
+                <td width="200px" align="center">{{.Manager}}</td>
+                <td width="200px" align="center">{{.Province}}</td>
+                <td width="200px" align="center">{{.City}}</td>
+                <td width="200px" align="center">{{.Company}}</td>
+                <td width="200px" align="center">{{.Spec}}</td>
+                <td width="200px" align="center">{{.Workload}}</td>
+                <td width="200px" align="center">{{.Starting_date}}</td>
+                <td width="200px" align="center">{{.Ending_date}}</td>
+                <td width="200px" align="center">{{.Status}}</td>
+                <td width="200px" align="center">{{.Payment}}</td>
+                <td width="200px" align="center">{{.Remarks}}</td>
+                <td width="200px" align="center">
+                    <a href="">修改</a>
+                    <a href="#" name="id">删除</a>
+                </td>
+            </tr>        
+        {{end}}
+    </table>
+    </body>
+</html>
